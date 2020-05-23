@@ -1,5 +1,5 @@
 # dash
-SimpleHTTPServer that let's you mock requests quickly
+Simple HTTPS Server that let's you mock requests quickly. By running dash inside of a folder, that folder now becomes available via a webserver.
 
 ## Run
 from the dash folder, `run go build`. Once you have the binary you can run `./dash -h` to get the help instructing you on how to use the application. If you specify both the cert and key it'll run on an https server. If either or none of these parameters are specified it'll run as insecure http.
