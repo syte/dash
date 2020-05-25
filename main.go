@@ -41,6 +41,7 @@ func main() {
 		fmt.Printf("Now serving request for %s from %s", r.URL.Path, r.RemoteAddr)
 		if err != nil {
 			w.WriteHeader(http.StatusNotFound)
+			return
 		}
 
 		w.Write(contents)
